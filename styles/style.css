@@ -2,6 +2,7 @@
 	--primary-color: #FFE8D6;
 	--secondary-color: #CB997E;
 	--bg-thing: #EDEDE8;
+	--bg-thing-mobile: #EDEDE888;
 }
 
 @font-face {
@@ -12,150 +13,394 @@
 body {
 	font-family: "Arial";
 	margin: 0px;
-}
-
-header {
-	background-color: var(--primary-color);
-	width: 100%;
-	height: 60px;
-	box-sizing: border-box;
-	border-bottom: 3px solid black;
-	z-index: 999;
-	display: flex;
-	padding: 7.5px;
-	padding-left: 25px;
-	justify-content: space-between;
-}
-
-.options {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.option {
-	margin: 0px;
-	margin-right: 50px;
-	font-size: 18px;
-	text-decoration: none;
-	color: #000;
-}
-
-.optionB {
-	margin: 0px;
-	margin-right: 50px;
-	margin-left: 50px;
-	font-size: 18px;
-	text-decoration: none;
-	color: #000;
+	width: fit-content;
 }
 
 .pfp {
 	border-radius: 50%;
 }
 
-.topDiv {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: var(--bg-thing);
+@media (min-width: 551px) {
+	.options {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.option {
+		margin: 0px;
+		margin-right: 50px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #000;
+		display: initial;
+	}
+
+	.topPfp {
+		border-radius: 50%;
+		content: url("../Assets/pfpPlaceholder.png");
+	}
+
+	h1 {
+		position: initial;
+		z-index: 100;
+	}
+
+	.heheheha {
+		mask-image: radial-gradient(circle at 46%, var(--bg-thing), #0000 60%);
+		flex-grow: 0;
+	}
+
+	header {
+		background-color: var(--primary-color);
+		height: 60px;
+		box-sizing: border-box;
+		border-bottom: 3px solid black;
+		z-index: 999;
+		display: flex;
+		padding: 7.5px;
+		padding-left: 25px;
+		justify-content: space-between;
+	}
+
+	.recipeTypeTxt {
+		font-family: "Courgette";
+		font-size: 20px;
+	}
+
+	.recipeNameBold {
+		font-size: 64px;
+		font-weight: bolder;
+	}
+
+	.recipeNameNormal {
+		font-size: 48px;
+		font-weight: normal;
+	}
+
+	.recipeBtn {
+		border: 2px solid var(--secondary-color);
+		color: var(--secondary-color);
+		background-color: #0000;
+		width: 100px;
+		height: 35px;
+		border-radius: 25px;
+	}
+
+	.optionTxt {
+		margin: 0px;
+		margin-right: 50px;
+		margin-left: 50px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #000;
+		width: 250px;
+	}
+
+	.mobileSeparateDiv {
+		display: flex;
+		align-items: center;
+	}
+
+	.optionB {
+		margin: 0px;
+		margin-right: 50px;
+		margin-left: 50px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #000;
+	}
+
+	.topDiv {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: var(--bg-thing);
+	}
+
+	.category {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 75px;
+		border-bottom: 3px solid #000;
+		flex-wrap: wrap;
+	}
+
+	.articleSection {
+		margin: 75px;
+	}
+
+	.articleContainer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 30px;
+	}
+
+	.articleImg {
+		width: 75%;
+		height: 75%;
+	}
+
+	h3 {
+		font-family: "Arial";
+		font-size: 40px;
+		margin: 10px;
+	}
+
+	p {
+		font-family: "Arial";
+		margin: 10px;
+		width: 60%;
+	}
+
+	.emailRegisterSection {
+		margin: 75px;
+		padding: 50px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border-radius: 25px;
+		background-color: var(--secondary-color);
+	}
+
+	.authorDiv {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		border-top: 3px solid #000;
+		background-color: var(--secondary-color);
+		padding: 75px;
+	}
+
+	.authorDescription {
+		width: 60%;
+	}
+
+	.optionEnd {
+		margin: 0px;
+		margin-right: 50px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #000;
+		display: initial;
+	}
+
+	.finalDiv {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.options {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.optionsMedia {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
-.heheheha {
-	mask-image: radial-gradient(circle at 46%, var(--bg-thing), #0000 60%);
-}
+@media (max-width: 550px) {
+	.options {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-.recipeTypeTxt {
-	font-family: "Courgette";
-	font-size: 20px;
-}
+	.option {
+		margin: 0px;
+		margin-right: 50px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #000;
+		display: none;
+	}
 
-.recipeNameBold {
-	font-size: 64px;
-	font-weight: bolder;
-}
+	.topPfp {
+		border-radius: 50%;
+		content: url("../Assets/desplegaImg.png");
+	}
 
-.recipeNameNormal {
-	font-size: 48px;
-	font-weight: normal;
-}
+	h1 {
+		position: absolute;
+		z-index: 100;
+	}
 
-.recipeBtn {
-	border: 2px solid var(--secondary-color);
-	color: var(--secondary-color);
-	background-color: #0000;
-	width: 100px;
-	height: 35px;
-	border-radius: 25px;
-}
+	.heheheha {
+		mask-image: radial-gradient(circle at 46%, var(--bg-thing-mobile), #0000 60%);
+		flex-grow: 0.7;
+	}
 
-.category {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: 75px;
-	border-bottom: 3px solid #000;
-}
+	header {
+		background-color: var(--primary-color);
+		height: 100px;
+		box-sizing: border-box;
+		border-bottom: 3px solid black;
+		z-index: 999;
+		display: flex;
+		padding: 7.5px;
+		padding-left: 25px;
+		justify-content: space-between;
+	}
 
-.articleSection {
-	margin: 75px;
-}
+	.recipeTypeTxt {
+		font-family: "Courgette";
+		font-size: 28px;
+	}
 
-.articleContainer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 30px;
-}
+	.recipeNameBold {
+		font-size: 96px;
+		font-weight: bolder;
+	}
 
-.articleImg {
-	width: 75%;
-	height: 75%;
-}
+	.recipeNameNormal {
+		font-size: 64px;
+		font-weight: normal;
+	}
 
-h3 {
-	font-family: "Arial";
-	font-size: 40px;
-	margin: 10px;
-}
+	.recipeBtn {
+		border: 2px solid var(--secondary-color);
+		color: var(--secondary-color);
+		background-color: #0000;
+		width: 100px;
+		height: 35px;
+		border-radius: 25px;
+	}
 
-p {
-	font-family: "Arial";
-	margin: 10px;
-	width: 60%;
+	.optionTxt {
+		margin: 30px;
+		font-size: 30px;
+		text-decoration: none;
+		color: #000;
+		text-align: center;
+	}
+
+	.mobileSeparateDiv {
+		display: contents;
+	}
+
+	.optionB {
+		margin: 30px;
+		font-size: 32px;
+		text-decoration: none;
+		color: #000;
+	}
+
+	.topDiv {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: var(--bg-thing);
+	}
+
+	.category {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: fit-content;
+		border-bottom: 3px solid #000;
+		flex-wrap: wrap;
+		padding: 25px;
+	}
+
+	.articleSection {
+		margin: 35px;
+	}
+
+	.articleContainer {
+		align-items: center;
+		justify-content: space-between;
+		margin: 0px;
+	}
+
+	article {
+		margin-bottom: 45px;
+	}
+
+	.articleImg {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 15px;
+	}
+
+	h3 {
+		font-family: "Arial";
+		font-size: 52px;
+		margin: 10px;
+	}
+
+	p {
+		font-family: "Arial";
+		margin: 10px;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.emailRegisterSection {
+		margin: 75px;
+		padding: 50px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		align-items: center;
+		justify-content: space-around;
+		border-radius: 25px;
+		background-color: var(--secondary-color);
+	}
+
+	.authorDiv {
+		align-items: center;
+		justify-content: space-around;
+		border-top: 3px solid #000;
+		background-color: var(--secondary-color);
+		padding: 75px;
+	}
+
+	.authorDescription {
+		width: 100%;
+	}
+
+	.optionEnd {
+		margin: 0px;
+		margin-right: 50px;
+		font-size: 18px;
+		text-decoration: none;
+		color: #000;
+		display: initial;
+	}
+
+	.finalDiv {
+		align-items: center;
+		justify-content: space-between;
+		height: 150px;
+	}
+
+	.options {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		flex-direction: column;
+		justify-self: anchor-center;
+	}
+
+	.optionsMedia {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .endingDiv  {
 	background-color: var(--primary-color);
 	border-top: 1px solid #000;
 	padding-top: 15px;
-}
-
-.finalDiv {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.authorDiv {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	border-top: 3px solid #000;
-	background-color: var(--secondary-color);
-	padding: 75px;
-}
-
-.emailRegisterSection {
-	margin: 75px;
-	padding: 50px;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	border-radius: 25px;
-	background-color: var(--secondary-color);
 }
 
 input {
@@ -167,7 +412,6 @@ input {
 	color: #000;
 	border-right-color: #0000;
 }
-
 
 .SubmitBtn {
 	background-color: var(--primary-color);

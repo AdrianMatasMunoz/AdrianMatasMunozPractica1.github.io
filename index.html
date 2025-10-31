@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Hola profe</title>
 		<link rel="stylesheet" href="./styles/style.css">
 	</head>
@@ -14,7 +15,7 @@
 				<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Most popular recipes</a>
 				<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Categories</a>
 			</div>
-			<img alt="Profile picture" src="./Assets/pfpPlaceholder.png" class="pfp">
+			<img alt="Profile picture" src="./Assets/pfpPlaceholder.png" class="pfp, topPfp">
 		</header>
 		<body>
 			<div class="topDiv">
@@ -26,13 +27,15 @@
 				</h1>
 				<img src="./Assets/jonkler.png" alt="heheheha" class="heheheha">
 			</div>
-			<div class="category">
-				<p class="optionB"><b>View by category: </b></p>
-				<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Appetizers</a>
-				<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Beverages</a>
-				<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Desserts</a>
-				<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Healthy</a>
-			</div>
+			<section class="category">
+				<p class="optionTxt"><b>View by category: </b></p>
+				<div class="mobileSeparateDiv">
+					<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Appetizers</a>
+					<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Beverages</a>
+					<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Desserts</a>
+					<a class="optionB" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Healthy</a>
+				</div>
+			</section>
 			<section class="articleSection">
 				<h2 class="recipeNameNormal">Latest recipes</h2>
 				<div class="articleContainer">
@@ -67,7 +70,7 @@
 					<h3>Never miss a recipe</h3>
 					<p>Join thousands of Company subscribers and get our best recipes delivered each week!</p>
 				</div>
-				<div>
+				<div style="display: flex;">
 					<input name="emailInput" placeholder="Your email here">
 					<button class="SubmitBtn" onclick="alert('El botó encara no funciona.\nNo hem fet Javascript encara.\n(Encara així, aquest missatge empra Javascript)');">Submit</button>
 				</div>
@@ -131,7 +134,7 @@
 		<footer>
 			<div class="authorDiv">
 				<img alt="Profile picture" src="./Assets/pfpPlaceholder.png" class="pfp">
-				<div style="width: 60%;">
+				<div class="authorDescription">
 					<p class="recipeTypeTxt">About the author:</p>
 					<h2 class="recipeNameBold" style="font-size: 44px;">Adrián Matas Muñoz</h2>
 					<p>
@@ -146,15 +149,15 @@
 				<img alt="Logo" src="./Assets/Logo.png" style="scale: 0.75;">
 				<div class="finalDiv">
 					<div class="options" style="margin: 40px">
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')"><u>Latest Recipes</u></a>
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Most popular recipes</a>
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Categories</a>
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')"><u>Latest Recipes</u></a>
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Most popular recipes</a>
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')">Categories</a>
 					</div>
-					<div class="options" style="margin: 40px">
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #0BB;"><u>Twitter</u></a>
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #00F;"><u>Facebook</u></a>
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #F0F;"><u>Instagram</u></a>
-						<a class="option" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #444;"><u>TikTok</u></a>
+					<div class="optionsMedia" style="margin: 40px">
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #0BB;"><u>Twitter</u></a>
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #00F;"><u>Facebook</u></a>
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #F0F;"><u>Instagram</u></a>
+						<a class="optionEnd" href="javascript:alert('Bon día profe\nAquí no hi ha contingut.\n        - Adrián Matas Muñoz')" style="color: #444;"><u>TikTok</u></a>
 					</div>
 				</div>
 			</div>
